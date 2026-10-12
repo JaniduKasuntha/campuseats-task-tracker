@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "E:\\Sliit projects\\Y3 S1\\SEF\\IT24101236_Lab03_Project\\CampusEats.Api\\CampusEats.Api.csproj": {}
+    "C:\\Users\\Janidu\\Documents\\GitHub\\campuseats-task-tracker\\src\\CampusEats.Api\\CampusEats.Api.csproj": {}
   },
   "projects": {
-    "E:\\Sliit projects\\Y3 S1\\SEF\\IT24101236_Lab03_Project\\CampusEats.Api\\CampusEats.Api.csproj": {
+    "C:\\Users\\Janidu\\Documents\\GitHub\\campuseats-task-tracker\\src\\CampusEats.Api\\CampusEats.Api.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "E:\\Sliit projects\\Y3 S1\\SEF\\IT24101236_Lab03_Project\\CampusEats.Api\\CampusEats.Api.csproj",
+        "projectUniqueName": "C:\\Users\\Janidu\\Documents\\GitHub\\campuseats-task-tracker\\src\\CampusEats.Api\\CampusEats.Api.csproj",
         "projectName": "CampusEats.Api",
-        "projectPath": "E:\\Sliit projects\\Y3 S1\\SEF\\IT24101236_Lab03_Project\\CampusEats.Api\\CampusEats.Api.csproj",
+        "projectPath": "C:\\Users\\Janidu\\Documents\\GitHub\\campuseats-task-tracker\\src\\CampusEats.Api\\CampusEats.Api.csproj",
         "packagesPath": "C:\\Users\\Janidu\\.nuget\\packages\\",
-        "outputPath": "E:\\Sliit projects\\Y3 S1\\SEF\\IT24101236_Lab03_Project\\CampusEats.Api\\obj\\",
+        "outputPath": "C:\\Users\\Janidu\\Documents\\GitHub\\campuseats-task-tracker\\src\\CampusEats.Api\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "C:\\Users\\Janidu\\AppData\\Roaming\\NuGet\\NuGet.Config"
