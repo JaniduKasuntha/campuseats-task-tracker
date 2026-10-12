@@ -10,6 +10,16 @@ var builder = WebApplication.CreateBuilder(args);
 
 // Add services to the container.
 builder.Services.AddControllers();
+builder.Services.AddCors(options =>
+{
+    options.AddPolicy("Frontend", policy =>
+    {
+        policy
+            .WithOrigins("https://campuseats-task-tracker-sigma.vercel.app/")
+            .AllowAnyHeader()
+            .AllowAnyMethod();
+    });
+});
 //builder.Services.AddSingleton<IMenuService, MenuService>();
 builder.Services.AddScoped<IMenuService, MenuService>(); // one per request
 
@@ -75,10 +85,13 @@ if (app.Environment.IsDevelopment())
     app.UseSwagger();
     app.UseSwaggerUI();
 }
-
 app.UseHttpsRedirection();
-app.UseAuthentication(); // who are you? (validates JWT)
-app.UseAuthorization(); // may you? (checks roles)
+
+app.UseCors("Frontend");
+
+app.UseAuthentication();
+app.UseAuthorization();
+
 app.MapControllers();
 
 app.Run();
