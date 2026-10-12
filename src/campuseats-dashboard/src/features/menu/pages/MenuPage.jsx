@@ -7,9 +7,7 @@ import { useFetch } from "../hooks/useFetch";
 function MenuPage() {
   const [query, setQuery] = useState("");
   const debounced = useDebounce(query, 400);
-  const API = import.meta.env.VITE_API_URL;
-
-  const { data: dishes, isLoading, error } = useFetch(`${API}/api/menu`);
+  const { data: dishes, isLoading, error } = useFetch("/menu.json");
   if (isLoading) {
     return <p>Loading menu…</p>;
   }

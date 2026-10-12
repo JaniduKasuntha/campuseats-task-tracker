@@ -34,7 +34,7 @@ builder.Services.AddSwaggerGen(c =>
  });
 });
 builder.Services.AddDbContext<AppDbContext>(opt =>
- opt.UseNpgsql(builder.Configuration    
+ opt.UseNpgsql(builder.Configuration
  .GetConnectionString("Default")));
 
 var jwt = builder.Configuration.GetSection("Jwt");
